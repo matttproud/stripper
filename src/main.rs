@@ -52,12 +52,10 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-    use std::path::Path;
-    use std::path::PathBuf;
-
     use super::{Entry, process};
-    use ignore::gitignore::Gitignore;
-    use ignore::gitignore::GitignoreBuilder;
+
+    use ignore::gitignore::{Gitignore, GitignoreBuilder};
+    use std::path::{Path, PathBuf};
 
     #[derive(Debug, Clone, PartialEq)]
     struct TestEntry {
